@@ -149,16 +149,16 @@ header ul li a:hover:before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 400px;
+   
   }
 
-  .images {
-    width: 900px;
+  .images img {
+    width: 400px;
   }
 
   .firma {
     bottom: -50px;
-    right: 50px;
+    right: 10px;
   }
 
   .links {
