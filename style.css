@@ -163,7 +163,7 @@ header ul li a:hover:before {
   }
 
   .firma {
-    bottom: 0px;
+    bottom: -100px;
     right: 20px;
   }
 
