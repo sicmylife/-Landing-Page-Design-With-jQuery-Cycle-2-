@@ -155,6 +155,9 @@ header ul li a:hover:before {
   .images img {
     width: 400px;
   }
+  .images  {
+    width: 400px;
+  }
 
   .firma {
     bottom: -50px;
