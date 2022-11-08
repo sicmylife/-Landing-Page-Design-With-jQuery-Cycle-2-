@@ -163,7 +163,7 @@ header ul li a:hover:before {
   }
 
   .firma {
-    bottom: -50px;
+    bottom: 0px;
     right: 20px;
   }
 
@@ -190,7 +190,7 @@ header ul li a:hover:before {
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
   }
 
