@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>STATIC</h1>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a href=""> Designer</a></li>
+          <li><a href=""> Clothing</a></li>
+          <li><a href=""> Intimates</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="images image-slideshow">
+        <img src="./images/1.jpeg" alt="" />
+        <img src="./images/2.jpeg" alt="" />
+        <img src="./images/3.jpeg" alt="" />
+      </div>
+      <div class="name">
+        <svg
+          width="10"
+          height="1018"
+          viewBox="0 0 10 1018"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 1018L5 -2.6226e-05"
+            stroke="white"
+            stroke-width="8.9814"
+          />
+        </svg>
+      </div>
+      <div class="firma">
+        <svg
+          width="148"
+          height="240"
+          viewBox="0 0 2848 940"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1680.75 8.00293C1691.01 64.4272 1753.44 132.406 1783.06 175.879C1881.95 321.001 1993.69 449.914 2117.37 574.314C2142.67 599.761 2222.27 705.445 2268.67 705.445C2294.56 705.445 2252.17 670.209 2251.38 669.42"
+            stroke="white"
+            stroke-width="15"
+            stroke-linecap="round"
+          />
+          <path
+            d="M474.635 604.575C546.94 519.874 660.531 478.83 761.393 438.86C985.26 350.147 1219.07 280.311 1453.07 224.152C1711.83 162.05 1975.46 120.541 2239.85 91.5806C2393.96 74.7008 2585.74 35.7346 2739.88 77.1707C2943.75 131.976 2788.32 318.996 2685.12 384.103C2510 494.586 2303.8 562.968 2110.16 631.954C1867.95 718.249 1623.18 803.336 1377.42 879.084C1323.73 895.632 962.077 1006.95 1145.42 844.501C1398.26 620.467 1754.71 543.636 2053.24 400.674C2060.93 396.993 2168.53 351.323 2081.34 376.898C1870.43 438.765 1656.98 492.572 1444.42 548.376C966.378 673.881 484.532 785.799 7.75244 915.83"
+            stroke="white"
+            stroke-width="15"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".image-slideshow").cycle({
+          speed: 1500,
+          fx: "scrollHorz",
+        });
+
+        let tl = gsap.timeline();
+        tl.from(".firma", {
+          duration: 1,
+          display: "none",
+          delay: 1.5,
+        }).from("header", {
+          y: -100,
+          duration: 1,
+          stagger: 6,
+          delay: 1.5,
+        }).from('.images',{
+          y:-30,
+          duration: 1,
+          opacity:0,
+        })
+      });
+    </script>
+  </body>
+</html>

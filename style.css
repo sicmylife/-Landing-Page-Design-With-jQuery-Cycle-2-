@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f677f7;
+  color: white;
+
+  font-family: "Bebas Neue", cursive;
+  background-color: rgb(17, 17, 17);
+  /* background-color:#f8fdc3; */
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  /* border-bottom: solid 1px white; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1400px;
+}
+
+header .logo {
+  margin-left: 30px;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-table;
+  margin: 0 20px;
+}
+
+header ul li a {
+  display: block;
+  color: #f677f7;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+header ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+header ul li a:hover:before {
+  left: 100%;
+  transition: 0.5s all ease;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  position: absolute;
+  z-index: -1;
+  width: 780px;
+}
+
+.images img {
+  width: 100%;
+}
+
+.firma {
+  position: absolute;
+  bottom: -50px;
+  right: 100px;
+}
+
+.name path {
+  animation: name 10s ease 1;
+}
+.firma path {
+  animation: firma 3s ease 1;
+}
+
+@keyframes name {
+  from {
+    stroke-dasharray: 9000;
+    stroke-dashoffset: 9000;
+  }
+
+  to {
+    stroke-dasharray: 9000;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes firma {
+  from {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+  }
+
+  to {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (min-width: 1450px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    /* border-bottom: solid 1px white; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .images {
+    width: 1000px;
+  }
+
+  .firma {
+    bottom: -50px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    /* border-bottom: solid 1px white; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+  }
+
+  .images {
+    width: 900px;
+  }
+
+  .firma {
+    bottom: -50px;
+    right: 50px;
+  }
+
+  .links {
+    background-color: #f677f7;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    display: none;
+  }
+
+  header ul li {
+    display: block;
+    margin: 0 10px;
+  }
+
+  header ul li a {
+    display: block;
+    color: #f677f7;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
