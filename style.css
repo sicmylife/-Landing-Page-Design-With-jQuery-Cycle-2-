@@ -81,7 +81,7 @@ header ul li a:hover:before {
 
 .firma {
   position: absolute;
-  bottom: -50px;
+  bottom: 0px;
   right: 100px;
 }
 
@@ -162,9 +162,9 @@ header ul li a:hover:before {
     top: 200px;
   }
 
-  .firma {
-    bottom: -100px;
-    right: 20px;
+  .firma  {
+    bottom: 10px;
+    right: 50px;
   }
 
   .links {
